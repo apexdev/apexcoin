@@ -1,0 +1,9 @@
+Building APEXcoin
+
+See doc/readme-qt.rst for instructions on building APEXcoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of APEXcoin.
+
+See doc/build-*.txt for instructions on building apecoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of APEXcoin.
