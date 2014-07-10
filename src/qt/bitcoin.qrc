@@ -50,6 +50,7 @@
         <file alias="twitter">res/icons/TW.png</file>
         <file alias="face">res/icons/face.png</file>
         <file alias="social">res/icons/social.png</file>
+		<file alias="qtlogo">res/icons/qtlogo-64.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
@@ -58,7 +59,7 @@
 		<file alias="bkg">res/images/bkg.png</file>
     </qresource>
     <qresource prefix="/movies">
-        <file alias="update_spinner">res/movies/update_spinner.mng</file>
+        <file alias="spinner">res/movies/spinner.gif</file>
         <file alias="camel">res/images/wallet.png</file>
     </qresource>
     <qresource prefix="/translations">

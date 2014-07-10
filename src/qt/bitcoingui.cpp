@@ -195,7 +195,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     toolbar2->addWidget(progressBar);
 
 
-    syncIconMovie = new QMovie(":/movies/update_spinner", "mng", this);
+    syncIconMovie = new QMovie(":/movies/spinner", "gif", this);
 
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
@@ -285,12 +285,12 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutCardAction = new QAction(tr("APEXcoin Website"), this);
-    aboutCardAction->setToolTip(tr("Show information about APEXcoin card"));
+    aboutCardAction = new QAction(QIcon(":/icons/bitcoin"), tr("APEXcoin Website"), this);
+    aboutCardAction->setToolTip(tr("Goto APEXcoin website"));
     aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About APEXcoin"), this);
     aboutAction->setToolTip(tr("Show information about APEXcoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
-    aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
+    aboutQtAction = new QAction(QIcon(":/icons/qtlogo"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
@@ -525,7 +525,7 @@ void BitcoinGUI::optionsClicked()
 
 void BitcoinGUI::aboutCardClicked()
 {
-    QDesktopServices::openUrl(QUrl("http://www.apexcoin.cc/"));
+    QDesktopServices::openUrl(QUrl("http://apexcoin.is-great.net/"));
 }
 
 void BitcoinGUI::aboutClicked()
